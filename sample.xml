@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rsp stat="ok">
+    <photos page="1" pages="100" perpage="5" total="500">
+        <photo id="25726846593" owner="28319834@N05" secret="75e2a19153" server="1531" farm="2" title="Infinity" ispublic="1" isfriend="0" isfamily="0" />
+        <photo id="25722268533" owner="38954353@N06" secret="78867ca43d" server="1539" farm="2" title="Dances with weeds" ispublic="1" isfriend="0" isfamily="0" />
+        <photo id="26302449676" owner="78422747@N04" secret="f8e20c34af" server="1529" farm="2" title="Deep into the Soul" ispublic="1" isfriend="0" isfamily="0" />
+        <photo id="26250955971" owner="8352571@N04" secret="469a554e6d" server="1615" farm="2" title="Moondance" ispublic="1" isfriend="0" isfamily="0" />
+        <photo id="26305213826" owner="138050950@N05" secret="5fa1957826" server="1645" farm="2" title="Sound of silence [explored]" ispublic="1" isfriend="0" isfamily="0" />
+    </photos>
+</rsp>
