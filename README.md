@@ -16,3 +16,6 @@ The setting Desktop Wallpaper feature supports only for Linux Mint 17.X.
 `page` (Optional) : The page of results to return. If this argument is omitted, it defaults to 1.
 #### Example:
 `https://api.flickr.com/services/rest/?method=flickr.interestingness.getList&date=2016-04-11&per_page=5&api_key=YOUR_API_KEY`
+
+#### Response:
+Check the sample.xml file for Sample XML response.
