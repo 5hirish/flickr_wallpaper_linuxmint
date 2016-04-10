@@ -2,6 +2,8 @@
 This scrips daily fetchs 5 interesting pictures from 2 days ago from Flickr. It selects a random photo from those five photos and sets it as desktop wallpaper.
 The setting Desktop Wallpaper feature supports only for Linux Mint 17.X.
 
+**API Key required** Get it here: [Flickr App Garden](https://www.flickr.com/services/apps/create/)
+
 ### Flickr API method:
 `flickr.interestingness.getList`
 #### Arguments:
@@ -19,3 +21,15 @@ The setting Desktop Wallpaper feature supports only for Linux Mint 17.X.
 
 #### Response:
 Check the sample.xml file for Sample XML response.
+
+#### Mapping to Photo URL
+
+`https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}_[mstzb].jpg`
+
+For more info [Photo Source URLs](https://www.flickr.com/services/api/misc.urls.html)
+
+#### Setting Wallpaper
+Once the image is downloaded its stored in your home directory in *Pictures/Flickr*
+Linux Mint 17.X users with Cinnamon DE supporting Gnome 3.XX can set wallpapers using:
+
+`gsettings set org.cinnamon.desktop.background picture-uri  file:////absolute_path_of_image_no_spaces`
