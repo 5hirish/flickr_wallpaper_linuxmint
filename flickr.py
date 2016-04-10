@@ -18,7 +18,7 @@ url = flickr_api+api_key
 # url = "https://api.github.com/events"
 print(url)
 
-response = requests.get(url)
+response = requests.get(url, stream=True)
 
 if response.status_code != 200:
     # This means something went wrong.
@@ -26,10 +26,12 @@ if response.status_code != 200:
 
 xml_data = response.content
 
-# xml = ET.fromstring(xml_data)
-xml = ET.parse("sample.xml")
-root = xml.getroot()
+# xml = ET.parse("sample.xml")      if parsing from file
+# root = xml.getroot()
+
+root = ET.fromstring(xml_data)          # need to parse the response body, not the response object
 photo_url = []
+
 for photo in root.findall('./photos/photo'):
     farm_id = photo.get('farm')
     server_id = photo.get('server')
