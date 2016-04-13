@@ -47,7 +47,7 @@ def download_image_set_wallpaper(flickr_wallpaper_url, image_name):
 date = datetime.date.today() - datetime.timedelta(days=2)  # Flickr interseting API Works only if two days before...!?
 print(str(date))
 
-api_key = "YOUR_API_KEY"  # Insert your API key here...
+api_key = "YOUR_API_KEY"  # Insert your API key here....
 number = "5"
 
 # flickr_api_test = "https://api.flickr.com/services/rest/?method=flickr.test.echo&name=value&api_key="
