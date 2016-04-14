@@ -1,6 +1,6 @@
 # Flickr Wallpapers
 This scrips daily fetchs 5 interesting pictures from 2 days ago from Flickr. It selects a random photo from those five photos and sets it as desktop wallpaper.
-The setting Desktop Wallpaper feature supports only for Linux Mint 17.X.
+The setting Desktop Wallpaper feature supports only for Linux Mint 17.X. and Ubuntu.
 
 **API Key required** Get it here: [Flickr App Garden](https://www.flickr.com/services/apps/create/)
 
@@ -33,3 +33,7 @@ Once the image is downloaded its stored in your home directory in *Pictures/Flic
 Linux Mint 17.X users with Cinnamon DE supporting Gnome 3.XX can set wallpapers using:
 
 `gsettings set org.cinnamon.desktop.background picture-uri  file:////absolute_path_of_image_no_spaces`
+
+For Ubuntu Unity Users:
+
+`gsettings set org.gnome.desktop.background picture-uri file:////absolute_path_of_image_no_spaces`
