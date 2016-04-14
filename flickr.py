@@ -41,6 +41,7 @@ def download_image_set_wallpaper(flickr_wallpaper_url, image_name):
     linux_mint_cmd = "gsettings set org.cinnamon.desktop.background picture-uri file:///" + image_name  # Works only on Gnome 3.XX Linux Mint 17.XX Cinnamon
     linux_mint_cmd = linux_mint_cmd.decode("utf-8")
     print linux_mint_cmd
+    # ubuntu_cmd = "gsettings set org.gnome.desktop.background picture-uri file:///" + image_name
     os.system(linux_mint_cmd)
 
 
